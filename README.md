@@ -23,12 +23,65 @@
   - **Instalação do Jupyter Notebook**:
     - Instale via pip: `pip install jupyter`  
     - Execute com o comando: `jupyter notebook`
-- Variáveis e tipos de dados (inteiros, float, strings, booleanos)
-- Operadores aritméticos, lógicos e de comparação
-- Estruturas condicionais (`if`, `elif`, `else`)
-- Estruturas de repetição (`for`, `while`)
-- Funções (`def`, argumentos, retorno de valores)
-- Manipulação de strings
+- **Variáveis e tipos de dados (inteiros, float, strings, booleanos)**
+  - Inteiros (`int`): números sem casas decimais, ex: `10`, `-5`
+  - Ponto flutuante (`float`): números com casas decimais, ex: `3.14`, `-0.5`
+  - Strings (`str`): sequência de caracteres, ex: `'Olá, mundo!'`, `"Python"`
+  - Booleanos (`bool`): valores `True` ou `False`
+  - Conversão entre tipos: `int()`, `float()`, `str()`, `bool()`
+
+- **Operadores aritméticos, lógicos e de comparação**
+  - Aritméticos: `+`, `-`, `*`, `/`, `//` (divisão inteira), `%` (módulo), `**` (exponenciação)
+  - Comparação: `==`, `!=`, `>`, `<`, `>=`, `<=`
+  - Lógicos: `and`, `or`, `not`
+
+- **Estruturas condicionais (`if`, `elif`, `else`)**
+  - Uso de `if` para executar um bloco de código se a condição for verdadeira
+  - `elif` para testar condições adicionais
+  - `else` como última alternativa
+  ```python
+  idade = 18
+  if idade < 18:
+      print("Menor de idade")
+  elif idade == 18:
+      print("Tem exatamente 18 anos")
+  else:
+      print("Maior de idade")
+  ```
+
+- **Estruturas de repetição (`for`, `while`)**
+  - `for` para percorrer listas, strings e intervalos
+  ```python
+  for i in range(5):
+      print(i)  # Saída: 0, 1, 2, 3, 4
+  ```
+  - `while` para executar um bloco de código enquanto a condição for verdadeira
+  ```python
+  contador = 0
+  while contador < 5:
+      print(contador)
+      contador += 1
+  ```
+
+- **Funções (`def`, argumentos, retorno de valores)**
+  - Declaração de funções com `def`
+  - Parâmetros e argumentos
+  - Retorno de valores com `return`
+  ```python
+  def soma(a, b):
+      return a + b
+  print(soma(2, 3))  # Saída: 5
+  ```
+
+- **Manipulação de strings**
+  - Métodos úteis: `upper()`, `lower()`, `strip()`, `replace()`, `split()`
+  ```python
+  texto = " Olá, Python! "
+  print(texto.strip())  # Remove espaços extras: "Olá, Python!"
+  print(texto.upper())  # " OLÁ, PYTHON! "
+  print(texto.replace("Python", "Mundo"))  # " Olá, Mundo! "
+  ```
+
 
 📝 **Exercícios**:
 - Criar um programa que verifica se um número é par ou ímpar
@@ -42,12 +95,52 @@
 ✅ **Objetivo**: Trabalhar com diferentes tipos de dados e arquivos.
 
 🔹 **Tópicos**:
-- Listas e tuplas (operações básicas, métodos úteis)
-- Dicionários e conjuntos
-- List comprehension
-- Manipulação de arquivos (`open`, leitura, escrita)
-- Módulos e pacotes (`import`, `pip`)
-- Introdução ao tratamento de erros (`try`, `except`)
+- **Listas e tuplas (operações básicas, métodos úteis)**
+  - Listas: `append()`, `remove()`, `pop()`, `sort()`, `len()`
+  - Tuplas: estruturas imutáveis, acesso por índice
+  ```python
+  lista = [1, 2, 3]
+  lista.append(4)
+  print(lista)
+  ```
+
+- **Dicionários e conjuntos**
+  - Dicionários: armazenamento chave-valor, `keys()`, `values()`, `items()`
+  - Conjuntos: elementos únicos, `add()`, `remove()`, `union()`, `intersection()`
+  ```python
+  dicionario = {"nome": "João", "idade": 25}
+  print(dicionario["nome"])
+  ```
+
+- **List comprehension**
+  - Criar listas de forma concisa
+  ```python
+  quadrados = [x**2 for x in range(10)]
+  print(quadrados)
+  ```
+
+- **Manipulação de arquivos (`open`, leitura, escrita)**
+  ```python
+  with open("arquivo.txt", "w") as f:
+      f.write("Olá, mundo!")
+  ```
+  ```python
+  with open("arquivo.txt", "r") as f:
+      print(f.read())
+  ```
+
+- **Módulos e pacotes (`import`, `pip`)**
+  - Importação de módulos (`import math`, `from os import path`)
+  - Uso do `pip install` para instalar pacotes externos
+
+- **Introdução ao tratamento de erros (`try`, `except`)**
+  ```python
+  try:
+      x = 1 / 0
+  except ZeroDivisionError:
+      print("Erro: divisão por zero")
+  ```
+
 
 📝 **Exercícios**:
 - Criar um programa que lê um arquivo `.txt` e conta quantas palavras ele tem
