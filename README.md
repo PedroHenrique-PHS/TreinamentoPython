@@ -140,6 +140,15 @@
   except ZeroDivisionError:
       print("Erro: divisão por zero")
   ```
+  
+- **Instalação e utilização do Insomnia para testes de API**
+  - **Instalação**:
+    - Baixe o Insomnia no site oficial: [insomnia.rest](https://insomnia.rest/download)
+    - Instale de acordo com seu sistema operacional
+  - **Utilização**:
+    - Criar uma nova requisição HTTP (GET, POST, PUT, DELETE)
+    - Configurar cabeçalhos, parâmetros e corpo da requisição
+    - Testar APIs REST e verificar respostas do servidor
 
 
 📝 **Exercícios**:
