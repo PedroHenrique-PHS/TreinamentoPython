@@ -9,6 +9,20 @@
 
 🔹 **Tópicos**:
 - Instalação do Python e configuração do ambiente (VS Code, PyCharm, Jupyter)
+- - **Instalação do Python**:
+    - Acesse o site oficial do Python ([python.org](https://www.python.org/))
+    - Baixe a versão mais recente compatível com seu sistema operacional
+    - Durante a instalação, marque a opção "Add Python to PATH"
+  - **Configuração do VS Code**:
+    - Instale o [Visual Studio Code](https://code.visualstudio.com/)
+    - Instale a extensão "Python" da Microsoft no marketplace do VS Code
+    - Configure o interpretador do Python no VS Code
+  - **Configuração do PyCharm**:
+    - Baixe e instale o [PyCharm](https://www.jetbrains.com/pycharm/)
+    - Crie um novo projeto e configure o interpretador do Python
+  - **Instalação do Jupyter Notebook**:
+    - Instale via pip: `pip install jupyter`  
+    - Execute com o comando: `jupyter notebook`
 - Variáveis e tipos de dados (inteiros, float, strings, booleanos)
 - Operadores aritméticos, lógicos e de comparação
 - Estruturas condicionais (`if`, `elif`, `else`)
