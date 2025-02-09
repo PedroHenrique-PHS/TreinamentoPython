@@ -1,5 +1,5 @@
 # TreinamentoPython
-## 📌 Roteiro de Estudo - Python
+## 📌 Roteiro de Estudo - Python (preparado com o auxiJio do CHATGT)
 
 ---
 
